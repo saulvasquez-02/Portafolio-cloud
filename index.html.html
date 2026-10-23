@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Saúl Vásquez | Portafolio</title>
+<meta name="description" content="Portafolio de Saúl Vásquez, estudiante de Ingeniería de Sistemas." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav wrap">
+    <a href="#inicio" class="brand"><span class="brand-mark">S</span> Vásquez</a>
+    <nav><ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul></nav>
+    <button class="menu-btn mono" id="menuBtn" aria-expanded="false" aria-controls="mnav">MENU</button>
+  </div>
+  <nav id="mnav" class="mnav mono">
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag">Disponible para prácticas</span>
+        <div class="role">Saúl Vásquez — Ingeniería de Sistemas, 7.º ciclo</div>
+        <h1>Aprendiendo cada día a crear tecnología que resuelva problemas reales.</h1>
+        <p class="lede">Estudiante en la Universidad Autónoma del Perú, enfocado en construir soluciones digitales claras y funcionales, desde el backend hasta la interfaz.</p>
+        <div class="btn-row">
+          <a class="btn" href="#proyectos">Ver proyectos</a>
+          <a class="btn ghost" href="#contacto">Contáctame</a>
+        </div>
+      </div>
+      <div class="schema">
+        <svg viewBox="0 0 200 200">
+          <circle class="node" cx="40" cy="50" r="4"/>
+          <circle class="node" cx="160" cy="40" r="4"/>
+          <circle class="node" cx="100" cy="100" r="5"/>
+          <circle class="node" cx="30" cy="160" r="4"/>
+          <circle class="node" cx="170" cy="150" r="4"/>
+          <path class="draw" d="M40,50 L100,100 L160,40 M100,100 L30,160 M100,100 L170,150 M30,160 L170,150"/>
+          <line x1="10" y1="10" x2="10" y2="30"/>
+          <line x1="10" y1="10" x2="30" y2="10"/>
+          <line x1="190" y1="190" x2="190" y2="170"/>
+          <line x1="190" y1="190" x2="170" y2="190"/>
+        </svg>
+        <div class="schema-label">FIG. SYS-01 / red de nodos</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi">
+    <div class="wrap">
+      <span class="tag">Perfil</span>
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="about-grid">
+        <div>
+          <p>Me apasiona resolver problemas mediante la <strong>lógica y el código</strong>, y ver cómo una idea simple puede convertirse en una herramienta útil para las personas.</p>
+          <p>Disfruto aprender constantemente y aplicar lo que descubro para crear <strong>soluciones digitales</strong> cada vez mejores, cuidando tanto la funcionalidad como la experiencia de quien las usa.</p>
+          <div class="formacion">
+            <span class="chip">Curso — Python</span>
+            <span class="chip">Curso — C++</span>
+            <span class="chip">Curso — JavaScript</span>
+          </div>
+        </div>
+        <div>
+          <div class="meter">
+            <div class="meter-top"><span>HTML5 &amp; CSS3</span><span class="pct">92%</span></div>
+            <div class="meter-track"><div class="meter-fill" style="width:92%"></div></div>
+          </div>
+          <div class="meter">
+            <div class="meter-top"><span>JavaScript</span><span class="pct">80%</span></div>
+            <div class="meter-track"><div class="meter-fill" style="width:80%"></div></div>
+          </div>
+          <div class="meter">
+            <div class="meter-top"><span>Python</span><span class="pct">78%</span></div>
+            <div class="meter-track"><div class="meter-fill" style="width:78%"></div></div>
+          </div>
+          <div class="meter">
+            <div class="meter-top"><span>C++</span><span class="pct">70%</span></div>
+            <div class="meter-track"><div class="meter-fill" style="width:70%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <div class="wrap">
+      <span class="tag">Trabajo</span>
+      <h2 class="section-title">Proyectos</h2>
+      <div class="projects">
+        <div class="project">
+          <span class="code">DOC-INV / gestión de datos</span>
+          <h3>Sistema de Inventarios</h3>
+          <p>Control de stock, registro de productos y generación de reportes, desarrollado con Python y una base de datos para un manejo eficiente del inventario.</p>
+        </div>
+        <div class="project">
+          <span class="code">DOC-CIT / sistema de gestión</span>
+          <h3>Gestión de Registros y Citas</h3>
+          <p>Plataforma para la programación y administración de citas, con registro de usuarios y control de horarios, pensada para optimizar la atención al cliente.</p>
+        </div>
+        <div class="project">
+          <span class="code">DOC-CAF / desarrollo web</span>
+          <h3>Sistema Web de Cafetería</h3>
+          <p>Sitio web con catálogo de productos, menú digital y diseño responsive, enfocado en una experiencia clara y atractiva para el cliente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="wrap">
+      <div class="contact-panel">
+        <div>
+          <span class="tag">Hablemos</span>
+          <h2>¿Tienes un proyecto en mente?</h2>
+          <p>Estoy abierto a prácticas, colaboraciones y nuevos retos. Escríbeme por cualquiera de estos canales.</p>
+        </div>
+        <div class="contact-list">
+          <a class="contact-item" href="https://wa.me/51952656599" target="_blank" rel="noopener">
+            <span class="k mono">WHATSAPP</span><span class="v">+51 952 656 599</span>
+          </a>
+          <a class="contact-item" href="mailto:saulvasquez.0299@gmail.com">
+            <span class="k mono">CORREO</span><span class="v">saulvasquez.0299@gmail.com</span>
+          </a>
+          <a class="contact-item" href="https://github.com/saulvasquez-02" target="_blank" rel="noopener">
+            <span class="k mono">GITHUB</span><span class="v">@saulvasquez-02</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Saúl Vásquez — Ingeniería de Sistemas</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
